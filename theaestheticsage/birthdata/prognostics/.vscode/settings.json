@@ -1,0 +1,19 @@
+{
+    "python.analysis.extraPaths": [
+        "./astrologic/karagam",
+        "./astrologic/planetary_positions/chart_workspace",
+        "./astrologic/karagam/influencers of characteristics of planets",
+        "./astrologic/karagam/influencers_of_characteristics_of_planets",
+        "./astrologic/bavagam/ashtavarkam",
+        "./astrologic/bavagam/base",
+        "./astrologic/karagam/strength of planets",
+        "./astrologic/bavagam/aadibathiyam",
+        "./dasabukthi",
+        "./astrologic/planetary_positions/SiderealAstro",
+        "./astrologic/planetary_positions/panchangam/baavam",
+        "./scraper",
+        "./astrologic/karagam/grahabalam",
+        "./astrologic/karagam/characteristics_of_planets",
+        "./astrologic/planetary_positions/panchangam/kochaaram"
+    ]
+}

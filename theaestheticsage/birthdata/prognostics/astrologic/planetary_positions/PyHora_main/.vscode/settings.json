@@ -1,0 +1,8 @@
+{
+    "python.analysis.extraPaths": [
+        "./hora/horoscope/chart",
+        "./hora/horoscope/transit",
+        "./hora/horoscope/transit",
+        "./hora/horoscope/dhasa"
+    ]
+}

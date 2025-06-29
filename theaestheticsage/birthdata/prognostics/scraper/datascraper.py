@@ -1,0 +1,61 @@
+import pyautogui  as py
+import time
+import datetime
+from pywinauto.application import Application
+datas=[]
+class dataentry:
+    def __init__(self,name,dob,dt,save) -> None:
+        self.dob=[int(ele) for ele in dob.split("-")]
+        self.dt=[int(tt) for tt in dt.split("-")]
+        self.name=name
+        self.save=save
+        app=Application(backend="win32").start("C://Program Files (x86)//Jagannatha Hora//bin//jhora.exe")
+        time.sleep(5)
+        py.hotkey("ctrl","d")
+        py.leftClick(873,211)
+        time.sleep(1)
+        py.moveRel(0,25*(self.dob[1]-1))
+        time.sleep(0.75)
+        py.leftClick()
+        py.moveTo(926,216)
+        time.sleep(0.75)
+        py.doubleClick(button="left")
+        py.write(str(self.dob[0]))
+        time.sleep(1)
+        py.moveRel(100,0)
+        py.doubleClick(button="left")
+        py.write(str(self.dob[2]))
+        py.moveRel(-230,70)
+        py.doubleClick(button="left")
+        py.write(str(self.dt[0]))
+        py.moveRel(100,0)
+        py.doubleClick(button="left")
+        py.write(str(self.dt[1]))
+        py.moveRel(125,0)
+        py.doubleClick(button="left")
+        py.write(str(self.dt[2]))
+        py.moveTo(723,394)
+        py.mouseDown(723,394,button="left",duration=0.1)
+        py.moveTo(610,394)
+        py.mouseUp()
+        py.write("salem")
+        py.click(1104,421,button="left")
+        py.scroll(-4250)
+        py.moveRel(-75,15)
+        py.click(button="left")
+        py.moveRel(+75,-15)
+        py.moveRel(75,0)
+        py.click(button="left")
+        py.moveRel(50,375)
+        py.leftClick()
+        time.sleep(0.5)
+        py.hotkey("ctrl","c")
+        py.sleep(3)
+        notepad=Application(backend="win32").start("Notepad")
+        time.sleep(1)
+        py.hotkey("ctrl","v")
+        time.sleep(1)
+        py.hotkey("ctrl","s")
+        py.write(self.save)
+        py.press("enter")
+        datas.append(self.save+".txt")

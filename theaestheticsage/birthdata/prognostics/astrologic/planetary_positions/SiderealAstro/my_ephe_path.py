@@ -1,0 +1,2 @@
+#EPHE_PATH = 'search-ms:displayname=Search%20Results%20in%20site-packages&crumb=location:C%3A%5CUsers%5C91770%5CAppData%5CLocal%5CPrograms%5CPython%5CPython311%5CLib%5Csite-packages\swisseph-0.0.0.dev1.dist-info'
+EPHE_PATH = "C://Users//91770//OneDrive//Desktop//WEBAPP//theaestheticsage//birthdata//prognostics//astrologic//planetary_positions//ephe"
